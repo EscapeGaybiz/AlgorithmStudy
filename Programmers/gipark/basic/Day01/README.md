@@ -1,8 +1,8 @@
 ### Day01
 ### 노션에서 확인  
-[**click**](https://gipark181.notion.site/Day1-2024-07-18-18c52365cd134a1cb7c52b9658dc9a56)
+▶️[**click**](https://gipark181.notion.site/Day1-2024-07-18-18c52365cd134a1cb7c52b9658dc9a56)
 <br/>
-<br/>
+<hr/>
 
 ### [문자열 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/181952)
 
