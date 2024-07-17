@@ -89,4 +89,4 @@ System.out.println("!@#$%^&*(\\'\"<>?:;");
 <br/>
 
 ### 노션 페이지
-[**notion**](https://www.notion.so/gipark181/Day1-18c52365cd134a1cb7c52b9658dc9a56?pvs=4)
+[**notion**](https://gipark181.notion.site/Day1-2024-07-18-18c52365cd134a1cb7c52b9658dc9a56)
