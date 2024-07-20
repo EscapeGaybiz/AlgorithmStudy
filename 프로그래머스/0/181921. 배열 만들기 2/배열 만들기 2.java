@@ -24,5 +24,14 @@ class Solution {
 
         int[] new_list = list.stream().mapToInt(Integer::intValue).toArray();
         return new_list;
+        //toBinaryString() 2진수
+//         for (int i = 1; i < 64; i++) {
+//             int num = Integer.parseInt(Integer.toBinaryString(i)) * 5;
+//             if (l <= num && num <= r)
+//                 list.add(num);
+//         }
+
+//         return list.isEmpty() ? new int[] { -1 } : list.stream().mapToInt(i ->           i).toArray();
+   
     }
 }
