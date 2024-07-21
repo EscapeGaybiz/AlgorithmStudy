@@ -73,11 +73,11 @@ str.repeat(5);
 
 ### [**더 크게 합치기**](https://school.programmers.co.kr/learn/courses/30/lessons/181939)
 
-[Math.log10](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#log10-double-)
+[**Math.log10**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#log10-double-)
 
-[Math.pow](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#pow-double-double-)
+[**Math.pow**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#pow-double-double-)
 
-[Math.max](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#max-int-int-)
+[**Math.max**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#max-int-int-)
 
 ```java
 int a = 10;
@@ -97,11 +97,11 @@ Math.max(a, b)  // 10
 
 ### [**두 수의 연산값 비교하기**](https://school.programmers.co.kr/learn/courses/30/lessons/181938)
 
-[Math.log10](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#log10-double-)
+[**Math.log10**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#log10-double-)
 
-[Math.pow](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#pow-double-double-)
+[**Math.pow**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#pow-double-double-)
 
-[Math.max](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#max-int-int-)
+[**Math.max**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#max-int-int-)
 
 ```java
 // Math 함수들은 여러 데이터 타입을 지원
