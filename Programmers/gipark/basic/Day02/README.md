@@ -1,6 +1,6 @@
 ## Day02
 ### 노션에서 확인
-▶️[**click**](https://gipark181.notion.site/Day2-2024-07-21-192ac9f263fa46ab8bb14b27e27341d5?pvs=4)
+<a href="https://gipark181.notion.site/Day2-2024-07-21-192ac9f263fa46ab8bb14b27e27341d5?pvs=4" target="_blank">▶️<b>click</b></a>
 <br/>
 <hr/>
 
