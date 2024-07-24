@@ -1,9 +1,10 @@
 import java.util.*;
 class Solution {
     public String solution(String my_string, int[] indices) {
-       for (int x : indices) {
-            my_string = new StringBuilder(my_string).replace(x, x + 1, " ").toString();
+        StringBuilder sb = new StringBuilder(my_string);
+        for (int x : indices) {
+            sb.setCharAt(x, ' ');
         }
-        return my_string.replace(" ", "");
+        return sb.toString().replace(" ", "");
     }
 }
