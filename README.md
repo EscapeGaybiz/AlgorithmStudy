@@ -61,6 +61,7 @@ ps. 알고리즘 문제가 아니더라도, 공부한 내용이나 새로 알게
 ### ✔️ 알고리즘 문제 풀이 참고 사이트
 - [Baekjoon](https://www.acmicpc.net/)
 - [Programmers](https://programmers.co.kr/)
+- [Softeer](https://softeer.ai/index)
 - [LeetCode](https://leetcode.com/)
 - [SW Expert Academy](https://swexpertacademy.com/main/main.do)
 - [CodeUp](https://codeup.kr/index.php)
