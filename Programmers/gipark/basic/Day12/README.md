@@ -1,6 +1,6 @@
 ## Day12
 ### 노션에서 확인
-▶️[**click**](https://gipark181.notion.site/Day12-2024-07-29-4c0e60c8b0aa48a3a87dd348f42d8328?pvs=4)
+▶️[**click**](https://gipark181.notion.site/Day12-2024-07-30-4c0e60c8b0aa48a3a87dd348f42d8328?pvs=4)
 <br/>
 <hr/>
 
