@@ -1,8 +1,12 @@
 import java.util.*;
 class Solution {
     public String[] solution(String myString) {
-        String[] answer = myString.replace("x", " ").trim().split("[ ]+");
-        Arrays.sort(answer);
-        return answer;
+        StringTokenizer st = new StringTokenizer(myString, "x");
+        List<String> list = new ArrayList<>();
+        while (st.hasMoreTokens()) {
+            list.add(st.nextToken());
+        }
+        Collections.sort(list);
+        return list.toArray(new String[0]);
     }
 }
