@@ -1,6 +1,6 @@
 ## Day14
 ### 노션에서 확인
-▶️[**click**]()
+▶️[**click**](https://gipark181.notion.site/Day14-2024-07-31-440c0f68c01449d38d281b80f842c83b?pvs=4)
 <br/>
 <hr/>
 
