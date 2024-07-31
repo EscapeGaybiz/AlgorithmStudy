@@ -1,5 +1,3 @@
-package gipark.basic.Day07.배열
-
 import java.util.Stack;
 
 /**
