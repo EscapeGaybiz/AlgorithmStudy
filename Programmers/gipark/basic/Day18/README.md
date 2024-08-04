@@ -1,6 +1,6 @@
 ## Day18
 ### 노션에서 확인
-▶️[**click**]()
+▶️[**click**](https://gipark181.notion.site/Day18-2024-08-02-5745631505ef4c5da5b6baf14fc01670?pvs=4)
 <br/>
 <hr/>
 
