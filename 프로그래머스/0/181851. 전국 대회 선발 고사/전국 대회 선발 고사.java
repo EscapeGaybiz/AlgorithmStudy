@@ -1,9 +1,8 @@
 import java.util.*;
 class Solution {
     public int solution(int[] rank, boolean[] attendance) {
-        List<int[]> list = new ArrayList<>();
-        for (int i = 0; i < rank.length; i++) if(attendance[i]) list.add(new int[]{rank[i], i});
-        list.sort(Comparator.comparingInt(i -> i[0]));
-        return 10000 * list.get(0)[1] + 100 * list.get(1)[1] + list.get(2)[1];
+        PriorityQueue<Integer> que = new PriorityQueue<>((a, b) -> rank[a] - rank[b]);
+        for (int i = 0; i < attendance.length; i++) if(attendance[i]) que.add(i);
+        return 10000 * que.poll() + 100 * que.poll() + que.poll();
     }
 }
