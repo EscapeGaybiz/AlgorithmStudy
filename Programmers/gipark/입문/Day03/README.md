@@ -28,26 +28,43 @@ int maxCnt = 0;
 int cnt = 0;
 boolean isDuplicate = false;
 
+
+// Solution1
+// array 배열 정렬 후, 중복 체크 flag 사용.
 Arrays.sort(array);
 for (int i = 1; i < array.length; i++) {
-    if (array[i - 1] == array[i]) {
-        cnt++;
+        if (array[i - 1] == array[i]) {
+cnt++;
         if (maxCnt < cnt) {
-            maxCnt = cnt;
-            answer = array[i];
-            isDuplicate = false;
+maxCnt = cnt;
+answer = array[i];
+isDuplicate = false;
         } else if (maxCnt == cnt) {
-            isDuplicate = true;
+isDuplicate = true;
         }
-    } else {
-        cnt = 0;
-    }
-}
+        } else {
+cnt = 0;
+        }
+        }
 
-if (isDuplicate || (maxCnt == 0 && array.length != 1)) {
-    answer = -1;
+        if (isDuplicate || (maxCnt == 0 && array.length != 1)) {
+answer = -1;
+        }
+
+
+// Solution2
+// map을 사용하여 숫자 자체를 키값으로 cnt 체크.
+Map<Integer, Integer> map = new HashMap<>();
+for (int a : array) {
+cnt = map.getOrDefault(a, 0) + 1;
+        if (maxCnt < cnt) {
+maxCnt = cnt;
+answer = a;
+    } else if (maxCnt == cnt) {
+answer = -1;
+        }
+        map.put(a, cnt);
 }
-return answer;
 ```
 <br/>
 
