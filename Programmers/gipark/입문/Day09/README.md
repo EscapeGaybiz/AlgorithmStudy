@@ -98,6 +98,12 @@ return sb.toString();
 
 ### [**구슬을 나누는 경우수**](https://school.programmers.co.kr/learn/courses/30/lessons/120840)
 
+[**BigInteger**](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html)
+
+[**multiply**](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#multiply-java.math.BigInteger-)
+
+[**divide**](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#divide-java.math.BigInteger-)
+
 ```java
 // Solution1
 // 순서를 고려하지 않은 조합 문제
@@ -112,4 +118,36 @@ public int combination(int n, int r) {
     }
     return combination(n - 1, r - 1) + combination(n - 1, r);
 }
+```
+
+```java
+// Solution2
+// 예시, 서로 다른 5개의 구슬 중 3개를 고르는 경우의 수
+// 1. 먼저 3개를 고른다
+//    (5(포함)부터 시작해서 5 - 3(제외)까지 곱해서 뽑기)
+//    (5 * 4 * 3) => 60
+// 2. 뽑은 3개의 순서를 고려하지 않기 때문에 중복되는 수를 빼준다
+//    (3개를 줄세우기)
+//    (3 * 2 * 1) => 6
+
+// 60 / 6 => 10
+
+/**
+ * Combination(30, 15) 인 경우,
+ * 곱하기할때, 30 * 29 * 28 ... * 16 하면 202,843,204,931,727,360,000 이므로
+ * int형 범위를 넘어서게 되어 정확한 연산이 진행되지 않음
+ * 
+ * 따라서, 이론상 무한대인 BigInteger 객체를 사용하여 연산
+ */
+
+BigInteger answer = BigInteger.valueOf(1);
+
+for (int i = balls; i > balls - share; i--) {
+    answer = answer.multiply(BigInteger.valueOf(i));
+}
+
+for (int i = share; i > 0; i--) {
+    answer = answer.divide(BigInteger.valueOf(i));
+}
+return answer.intValue();
 ```
