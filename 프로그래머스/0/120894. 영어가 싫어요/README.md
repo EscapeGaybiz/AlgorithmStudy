@@ -1,10 +1,10 @@
 # [level 0] 영어가 싫어요 - 120894 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120894) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120894?language=java) 
 
 ### 성능 요약
 
-메모리: 78.3 MB, 시간: 0.19 ms
+메모리: 75.3 MB, 시간: 0.25 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 09월 07일 12:53:17
+2024년 09월 07일 12:53:58
 
 ### 문제 설명
 
