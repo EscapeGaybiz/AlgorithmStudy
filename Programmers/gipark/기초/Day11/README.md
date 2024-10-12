@@ -62,7 +62,7 @@ sb.toString().replaceAll("0", "");
 [**Comparator.reverseOrder**](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#reverseOrder--)
 
 ```java
-// Solution
+// 입문.jeoniee.Section02. 1. 큰 수 출력하기.Solution
 // 0부터 start_num - end_num 만큼 반복하면서 int[] answer에 넣기
 
 // answer 배열을 내림차순으로 정렬
@@ -72,7 +72,7 @@ Arrays.sort(answer, Comparator.reverseOrder());
 // Solution2
 // 0부터 start_num - end_num 만큼 반복하면서 start_num - i를 int[] answer에 넣기
 
-// Solution < Solution2
+// 입문.jeoniee.Section02. 1. 큰 수 출력하기.Solution < Solution2
 // 1번은 Dual-Pivot Quicksort를 쓰는 정렬 알고리즘이 동작하고,
 // 2번은 for문 한번 돌며 바로 넣어주기때문에 Solution2가 훨씬 빠르다.
 ```
