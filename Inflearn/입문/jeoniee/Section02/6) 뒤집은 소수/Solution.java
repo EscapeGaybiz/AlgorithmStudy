@@ -22,26 +22,31 @@ import java.util.*;
 
 public class Solution {
     public static void solution(int[] a) {
-        StringBuilder sb = new StringBuilder();
         int[] b = new int[a.length];
         for (int i = 0; i < a.length; i++) {
-            String dd = String.valueOf(a[i]);
-            sb.append(dd);
-            String reversed = sb.reverse().toString();
+            String reversed = new StringBuilder(String.valueOf(a[i])).reverse().toString();
             b[i] = Integer.parseInt(reversed);
-            sb.setLength(0);
         }
 
         for (int i = 0; i < b.length; i++) {
-            for (int j = 2; j < b[i]; j++) { //소수가 아님을 판별
-                if (b[i] % j == 0) b[i] = 0; //소수가 아니면 0 으로 만듬
+            if (b[i] < 2 || !isPrime(b[i])) {
+                b[i] = 0; //소수가 아니면 0으로 만듬
             }
         }
 
         for (int r : b) {
-            if (r != 0 && r != 1) System.out.print(r + " ");
+            if (r != 0) System.out.print(r + " ");
         }
     }
+
+    public static boolean isPrime(int a) {
+        if (a < 2) return false;
+        for (int i = 2; i <= Math.sqrt(a); i++) {
+            if (a % i == 0) return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
