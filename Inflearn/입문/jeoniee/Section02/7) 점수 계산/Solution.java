@@ -27,16 +27,20 @@ import java.util.*;
 
 public class Solution {
     public static void solution(int[] b) {
-        int cnt = 0, score = 0;
+        int[] scoreList = new int[b.length];
         for (int i = 0; i < b.length; i++) {
-            if (b[i] == 1) {
-                cnt++;
-                score += cnt;
-            } else {
-                cnt = 0;
+            int score = 1;
+            for (int j = 0; j < b.length; j++) {
+                if (b[j] > b[i]) {
+                    score++;
+                }
             }
+            scoreList[i] = score;
         }
-        System.out.println(score);
+
+        for (int c : scoreList) {
+            System.out.print(c + " ");
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
